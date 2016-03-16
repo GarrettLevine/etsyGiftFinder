@@ -124,11 +124,6 @@ label {
 	&:hover > .square-answers > .answers-img-container  > .answers-img-overlay {
 		opacity: 1;
 	}
-
-	&:hover > .square-answers > .answers-text {
-		color: $black;
-		text-decoration: underline;
-	}
 }
 
 .square-answers {

@@ -46,6 +46,9 @@ header {
 
 	.header-text-title, .header-text-descript {
 		width: 50%;
+		@include mq(medium) {
+			width: 100%;
+		}
 
 		@include mq(small) {
 			width: 100%;
@@ -75,7 +78,7 @@ header {
 
 .startForm-avatarContainer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 100%;
 

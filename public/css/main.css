@@ -495,6 +495,9 @@ header .wrapper {
         font-size: 2rem; } }
   .header-text .header-text-title, .header-text .header-text-descript {
     width: 50%; }
+    @media (min-width: 621px) {
+      .header-text .header-text-title, .header-text .header-text-descript {
+        width: 100%; } }
     @media (min-width: 1px) and (max-width: 620px) {
       .header-text .header-text-title, .header-text .header-text-descript {
         width: 100%; } }
@@ -525,9 +528,9 @@ header .wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -836,9 +839,6 @@ form.form-start {
         margin-top: 3rem; } }
     .question label:hover > .square-answers > .answers-img-container > .answers-img-overlay {
       opacity: 1; }
-    .question label:hover > .square-answers > .answers-text {
-      color: #000;
-      text-decoration: underline; }
   .question .square-answers {
     height: 35rem;
     width: 100%;
