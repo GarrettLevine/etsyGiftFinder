@@ -216,7 +216,7 @@ etsyApp.onRadioClick = function () {
 };
 
 etsyApp.onFormStart = function () {
-	$('.form-start').on('submit', function (e) {
+	$('label[value^=avatar').on('click', function (e) {
 		e.preventDefault();
 		$(this).parents('.header').hide();
 		etsyApp.getUserName();
