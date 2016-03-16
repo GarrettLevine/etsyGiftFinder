@@ -436,7 +436,7 @@ h6 {
 footer {
   background: #1d1d1d;
   text-align: center;
-  padding: 15px;
+  padding: 1.5rem;
   color: #666666; }
   footer p {
     font-size: 1.3em;
@@ -484,6 +484,7 @@ header .wrapper {
               justify-content: column; } }
   .header-text h1 {
     margin: 0;
+    display: inline-block;
     color: #EC6333; }
     @media (min-width: 1px) and (max-width: 620px) {
       .header-text h1 {
@@ -494,13 +495,10 @@ header .wrapper {
       .header-text h3 {
         font-size: 2rem; } }
   .header-text .header-text-title, .header-text .header-text-descript {
-    width: 50%; }
-    @media (min-width: 621px) {
+    width: 100%; }
+    @media (min-width: 920px) {
       .header-text .header-text-title, .header-text .header-text-descript {
-        width: 100%; } }
-    @media (min-width: 1px) and (max-width: 620px) {
-      .header-text .header-text-title, .header-text .header-text-descript {
-        width: 100%; } }
+        width: 50%; } }
   .header-text .header-text-descript {
     padding-top: 2.5rem;
     text-align: justify;
@@ -675,6 +673,19 @@ form.form-start {
   padding-left: 1rem;
   color: #666666;
   margin-top: 4rem; }
+
+@media (min-width: 920px) {
+  body {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .question1,
 .question3,
